@@ -1,0 +1,4816 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/meddevice#hasRisk"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/meddevice#isImplantable"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.example.org/meddevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Diego Calvo Alegre"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-26"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Diego Calvo Alegre"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "OWL-DL ontology modelling the EUDAMED registry: medical devices, manufacturers, identified risks, reported incidents and field safety corrective actions (FSCAs)."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-04-27"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Universitat Oberta de Catalunya"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "EUDAMED Medical Device Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology for the European catalogue of high-risk medical devices and in vitro diagnostic devices, under MDR (EU 2017/745) and IVDR (EU 2017/746) regulatory frameworks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "European Medical Device Catalogue Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.example.org/meddevice/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device whose operation depends on a source of energy other than the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ActiveImplant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An active device that is intended to be totally or partially introduced into the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Active Implant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  }, {
+    "@id" : "http://www.example.org/meddevice#ImplantableDevice"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Lowest risk class under IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class A"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Low-medium risk class under IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class B"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium-high risk class under IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class C"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#IVDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Highest risk class under IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class D"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Lowest risk class under MDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class I"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassIII",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Highest risk class under MDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class III"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassIIa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium-low risk class under MDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class IIa"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ClassIIb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#isSubclassifiedUnder" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MDRRiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medium-high risk class under MDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class IIb"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ContaminationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk from contamination of reagents or device components."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contamination Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#CorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Field Safety Corrective Action (FSCA) taken by a manufacturer to reduce the risk associated with a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Corrective Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#MedicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#CybersecurityRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk from cybersecurity vulnerabilities in connected medical devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cybersecurity Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-001"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Ventricular assist device for end-stage heart failure"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-003"
+  }, {
+    "@id" : "http://www.example.org/meddevice#RSK-004"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)00380740009095"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-001"
+  }, {
+    "@id" : "http://www.example.org/meddevice#INC-016"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-001"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ImplantableActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Left ventricular assist device for end-stage heart failure patients."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-002"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Micra AV Transcatheter Pacing System"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Leadless cardiac pacemaker for atrioventricular synchrony"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-009"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)00380740009112"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-002"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-001"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Leadless cardiac pacemaker for atrioventricular synchrony."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Micra AV Transcatheter Pacing System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-003"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Portico Transcatheter Heart Valve"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Transcatheter aortic valve replacement (TAVI)"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-005"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)00800002222291"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-003"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-002"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transcatheter aortic valve replacement device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Portico Transcatheter Heart Valve"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIb"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-004"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "SYNERGY Stent System"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Drug-eluting coronary stent"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-002"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)08714729002817"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-004"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-006"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Drug-eluting coronary stent system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SYNERGY Stent System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-005"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "ACUITY X4 Quadripolar LV Lead"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Cardiac resynchronization therapy lead"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-006"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)08714729004873"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-005"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-006"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cardiac resynchronization therapy lead."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACUITY X4 Quadripolar LV Lead"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIb"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-006"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "STELLAREX Drug-Coated Balloon"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Peripheral artery drug-coated angioplasty balloon"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)08718998000001"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-004"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SingleUseDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Peripheral artery drug-coated angioplasty balloon."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "STELLAREX Drug-Coated Balloon"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIa"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-007"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "ACUSON Sequoia Ultrasound"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Diagnostic ultrasound imaging system"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-001"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04054839450001"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-006"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-003"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Diagnostic ultrasound imaging system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACUSON Sequoia Ultrasound"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIa"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-008"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "MAGNETOM Vida MRI System"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Magnetic resonance imaging system 3T"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-011"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04054839460002"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-020"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-003"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Magnetic resonance imaging system 3T."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MAGNETOM Vida MRI System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-009"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Persona Knee System"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Total knee arthroplasty implant system"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-019"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)07612345001001"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-007"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-010"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Total knee arthroplasty implant system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Persona Knee System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-010"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "TRITON Total Hip System"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Ceramic-on-ceramic total hip replacement"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-020"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)09876543002002"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-008"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-007"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ceramic-on-ceramic total hip replacement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TRITON Total Hip System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-011"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Iluvien Intravitreal Implant"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Sustained-release fluocinolone acetonide ocular implant"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-007"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)05391520001011"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-017"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-011"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sustained-release fluocinolone acetonide ocular implant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Iluvien Intravitreal Implant"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-012"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Viva Cardiac Resynchronization Defibrillator"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Cardiac resynchronization therapy with defibrillation"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-013"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04012099001012"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-009"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-008"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cardiac resynchronization therapy with defibrillation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Viva Cardiac Resynchronization Defibrillator"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIb"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-013"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "ATERA Mechanical Ventilator"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "ICU mechanical ventilator with pressure and volume modes"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-010"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04046539001013"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-010"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-012"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ICU mechanical ventilator with pressure and volume modes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ATERA Mechanical Ventilator"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIa"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-014"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Lumify Portable Ultrasound"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Handheld point-of-care ultrasound probe"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)08718998001014"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-004"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Handheld point-of-care ultrasound probe."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lumify Portable Ultrasound"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIb"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-015"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Hemodialysis Machine 5008S"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "High-volume online hemodiafiltration machine"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-018"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04547597001015"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-018"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-013"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "High-volume online hemodiafiltration machine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hemodialysis Machine 5008S"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassC"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-016"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "cobas e 801 Immunoassay Analyzer"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Automated immunoassay analyzer for clinical laboratory"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "IVDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-014"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04015630001016"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-011"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-005"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Automated immunoassay analyzer for clinical laboratory use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cobas e 801 Immunoassay Analyzer"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassC"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-017"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "cobas SARS-CoV-2 RT-PCR Test"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Molecular diagnostic test for SARS-CoV-2 detection"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "IVDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-015"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04015630001017"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-012"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-005"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Molecular diagnostic test for SARS-CoV-2 detection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cobas SARS-CoV-2 RT-PCR Test"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassD"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-018"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "VIDAS HIV DUO Ultra"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Combined HIV Ag/Ab detection assay"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "IVDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-015"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)03760027001018"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-013"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-015"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Combined HIV Ag/Ab detection assay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VIDAS HIV DUO Ultra"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassC"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-019"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "PROGENSA PCA3 Assay"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Urine-based prostate cancer diagnosis assay"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "IVDR"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)07000087001019"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-014"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Urine-based prostate cancer diagnosis assay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PROGENSA PCA3 Assay"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassD"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-020"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Harmony Prenatal Test"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Non-invasive prenatal testing (NIPT) for aneuploidies"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "IVDR"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)00800002001020"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-002"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InVitroDiagnosticDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Non-invasive prenatal testing (NIPT) for aneuploidies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Harmony Prenatal Test"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-021",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassC"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-021"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "OPTIGA Glucose Monitoring System"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Continuous glucose monitor for patients with diabetes"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "IVDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-014"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)07300000001021"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-014"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SelfTestDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Continuous glucose monitor for patients with diabetes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OPTIGA Glucose Monitoring System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-022",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIa"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-022"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "BeneVision N1 Patient Monitor"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Portable patient monitor for vital signs"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)07300000001022"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-009"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Portable patient monitor for vital signs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BeneVision N1 Patient Monitor"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-023",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-023"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Tivoli II Cochlear Implant"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Active cochlear implant for sensorineural hearing loss"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-001"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)04012099001023"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-019"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-008"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Active cochlear implant for sensorineural hearing loss."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tivoli II Cochlear Implant"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIIb"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-024"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "Infusion Pump Plum 360"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Large volume infusion pump with drug library"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-010"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)00800002001024"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isAssociatedWithIncident" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-015"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-002"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Large volume infusion pump with drug library."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Infusion Pump Plum 360"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DEV-025",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasClassification" : [ {
+    "@id" : "http://www.example.org/meddevice#ClassIII"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceId" : [ {
+    "@value" : "DEV-025"
+  } ],
+  "http://www.example.org/meddevice#hasDeviceName" : [ {
+    "@value" : "ValveXpert Transcatheter Mitral Valve"
+  } ],
+  "http://www.example.org/meddevice#hasIntendedPurpose" : [ {
+    "@value" : "Transcatheter mitral valve replacement system"
+  } ],
+  "http://www.example.org/meddevice#hasRegulatoryFramework" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.example.org/meddevice#hasUDI_DI" : [ {
+    "@value" : "(01)05391520001025"
+  } ],
+  "http://www.example.org/meddevice#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isIVD" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/meddevice#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/meddevice#isManufacturedBy" : [ {
+    "@id" : "http://www.example.org/meddevice#MAN-011"
+  } ],
+  "http://www.example.org/meddevice#isReusable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transcatheter mitral valve replacement system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ValveXpert Transcatheter Mitral Valve"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A medical device or in vitro diagnostic device registered in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#MedicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#DiagnosticRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of incorrect diagnostic result from an IVD device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diagnostic Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-01"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "850"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000001"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-001"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SafetyAlert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Safety alert regarding anticoagulation protocol update for HeartMate 3 to reduce thrombosis risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-001 - HeartMate 3 anticoagulation alert"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-28"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-31"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide + UK"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "1240"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000002"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-002"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Voluntary recall of affected Micra AV lots due to premature battery depletion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-002 - Micra AV recall"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-15"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-30"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "320"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000003"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-003"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-003"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InSituCorrection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Enhanced deployment training and updated IFU for Portico valve implantation technique."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-003 - Portico valve deployment training"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-04-10"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "2100"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000004"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-004"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-005"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SafetyAlert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Safety communication regarding optimal fixation technique for ACUITY X4 lead."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-004 - ACUITY X4 lead fixation alert"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-20"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-30"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide + Switzerland"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "780"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000005"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-005"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-007"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InSituCorrection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Enhanced surveillance programme with annual DEXA scan for patients with affected tibial inserts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-005 - Persona knee enhanced surveillance"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-30"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "540"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000006"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-006"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-008"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Urgent safety recall due to elevated metal ion levels. Revision surgery recommended."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-006 - TRITON hip urgent recall"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-25"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-07-31"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide + UK"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "4300"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000007"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-007"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-009"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#UserNotice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Urgent safety notice regarding MRI scanning protocol for Viva CRT-D. Mandatory reprogramming required."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-007 - Viva CRT-D MRI protocol notice"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-05"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-15"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "180"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000008"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-008"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-010"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Software recall: mandatory update to version 2.2.0 resolving FiO2 calibration error."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-008 - ATERA ventilator software recall"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-20"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-30"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "620"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000009"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-009"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-011"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#UserNotice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Customer field notification regarding biotin interference in TSH assay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-009 - cobas e 801 biotin interference notice"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-30"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-31"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide + Norway + Iceland"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "12500 tests"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000010"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-010"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-012"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Immediate quarantine and replacement of affected reagent lots. New primer design covering BA.2.86."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-010 - cobas SARS-CoV-2 reagent lot recall"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-01"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "3200"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000011"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-011"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-014"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InSituCorrection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Enhanced calibration protocol and firmware update for OPTIGA CGM sensors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-011 - OPTIGA CGM firmware update"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-20"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-31"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide + UK + Norway"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "2870"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000012"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-012"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-015"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Urgent recall and remote software update. Drug library v4.3.0 corrects decimal point error."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-012 - Plum 360 drug library recall"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-10"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "420"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000013"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-013"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-016"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SafetyAlert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Safety communication regarding outflow graft kinking risk in HeartMate 3 LVAD."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-013 - HeartMate 3 graft kinking alert"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-25"
+  } ],
+  "http://www.example.org/meddevice#hasClosureDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-12-31"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "1100"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000014"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-014"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-017"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#UserNotice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Updated IFU regarding post-operative infection prophylaxis. Extended antibiotic course mandatory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-014 - Iluvien infection prophylaxis notice"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#FSCA-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasActionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-01"
+  } ],
+  "http://www.example.org/meddevice#hasCountriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/meddevice#hasDevicesAffected" : [ {
+    "@value" : "890"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_FSCARef" : [ {
+    "@value" : "EU-FSCA-2024-000015"
+  } ],
+  "http://www.example.org/meddevice#hasFSCA_ID" : [ {
+    "@value" : "FSCA-015"
+  } ],
+  "http://www.example.org/meddevice#hasStatus" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.example.org/meddevice#triggeredBy" : [ {
+    "@id" : "http://www.example.org/meddevice#INC-018"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InSituCorrection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Security patch 3.0.1 disabling unrestricted web interface. Network segmentation guidance issued."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA-015 - 5008S security patch"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000001"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-01-08"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-001"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Serious patient injury - embolic stroke"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "58"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-01-15"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-003"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-001 - HeartMate 3 thrombosis"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000002"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-01-29"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-002"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Device malfunction - premature battery depletion"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "72"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-03"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-009"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-002 - Micra AV battery depletion"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Italy"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000003"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-15"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-003"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Surgical intervention required - valve re-anchoring"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "67"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-20"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-005"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Portico valve paravalvular leak grade III due to partial migration 2 weeks post-TAVI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-003 - Portico valve migration"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000004"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-28"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-004"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Device malfunction - stent fracture"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "55"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-05"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "SYNERGY stent fracture detected on angiography 18 months post-implant causing restenosis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-004 - SYNERGY stent fracture"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Netherlands"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000005"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-12"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-005"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Surgical intervention required - lead extraction"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "63"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-18"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-006"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ACUITY X4 lead dislodgement to right ventricle requiring fluoroscopy-guided repositioning."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-005 - ACUITY X4 lead dislodgement"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Belgium"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000006"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-04-01"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-006"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Device malfunction - complete system failure"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-04-02"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ACUSON Sequoia ultrasound system froze mid-examination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-006 - ACUSON system failure"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Sweden"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000007"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-01"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-007"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Patient harm - adverse tissue reaction"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "70"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-04-14"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-019"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Persona knee tibial insert showing accelerated polyethylene wear with metallosis at 3-year revision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-007 - Persona knee wear debris"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Denmark"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000008"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-04-20"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-008"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Patient harm - cobalt toxicity"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "65"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-04-28"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-020"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "TRITON hip patient presented with elevated serum cobalt. ALTR confirmed by MRI."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-008 - TRITON hip cobalt toxicity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Poland"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000009"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-03"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-009"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Inappropriate shock delivery"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "68"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-06"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-013"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Viva CRT-D delivered inappropriate ICD therapy during MRI scan despite MRI-conditional programming."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-009 - Viva CRT-D inappropriate shock"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000010"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-19"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-010"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Device malfunction - incorrect FiO2 delivery"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-20"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-010"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ATERA ventilator software v2.1.3 delivered FiO2 6% lower than set value. 3 patients affected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-010 - ATERA ventilator FiO2 error"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000011"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-28"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-011"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Diagnostic error - false positive TSH results"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-03"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-014"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "cobas e 801 TSH assay reported false positive results in 12 euthyroid patients due to biotin interference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-011 - cobas e 801 false positive TSH"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000012"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-10"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-012"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Diagnostic error - false negative SARS-CoV-2"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-15"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-015"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "cobas SARS-CoV-2 assay failed to detect Omicron BA.2.86 in 7 samples. Lot-specific issue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-012 - cobas SARS-CoV-2 false negative"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000013"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-06-25"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-013"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Diagnostic error - false negative HIV"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-07-01"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-015"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "VIDAS HIV DUO Ultra failed to detect HIV-1 group O in seroconversion panel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-013 - VIDAS HIV false negative"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Netherlands"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000014"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-07-10"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-014"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Patient harm - hyperglycaemic event"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "45"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-07-18"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-014"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "OPTIGA CGM reported glucose 3.8 mmol/L while laboratory showed 14.2 mmol/L. Patient delayed insulin."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-014 - OPTIGA CGM false reading"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Italy"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000015"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-04"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-015"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Patient harm - drug overdose"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "81"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-05"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-010"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Plum 360 pump delivered 10x heparin dose due to software decimal point error in drug library v4.2.1."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-015 - Plum 360 heparin overdose"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "United Kingdom"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000016"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-15"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-016"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Patient harm - haemolytic anaemia"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "52"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-20"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-004"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "HeartMate 3 patient developed severe haemolysis associated with outflow graft kinking."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-016 - HeartMate 3 haemolysis"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000017"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-08-25"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-017"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Surgical intervention - implant removal"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "54"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-02"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-007"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Iluvien implant required surgical removal due to device-related endophthalmitis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-017 - Iluvien endophthalmitis"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000018"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-12"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-018"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Cybersecurity incident - unauthorised access"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-15"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-018"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "5008S hemodialysis web interface exposed to hospital network. Unauthorised access to alarm configuration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-018 - 5008S cybersecurity breach"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Sweden"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000019"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-09-28"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-019"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Near-miss - device not activated post-surgery"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "71"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-01"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#NearMissIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Tivoli II cochlear implant failed to respond to initial activation. Sound processor replacement resolved."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-019 - Tivoli II cochlear implant activation failure"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#INC-020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasCountryReported" : [ {
+    "@value" : "Belgium"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef" : [ {
+    "@value" : "EU-INC-2024-000020"
+  } ],
+  "http://www.example.org/meddevice#hasEventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-10"
+  } ],
+  "http://www.example.org/meddevice#hasIncidentId" : [ {
+    "@value" : "INC-020"
+  } ],
+  "http://www.example.org/meddevice#hasOutcome" : [ {
+    "@value" : "Patient harm - SAR heating injury"
+  } ],
+  "http://www.example.org/meddevice#hasPatientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "38"
+  } ],
+  "http://www.example.org/meddevice#hasPatientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/meddevice#hasReportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-14"
+  } ],
+  "http://www.example.org/meddevice#involvesRisk" : [ {
+    "@id" : "http://www.example.org/meddevice#RSK-011"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "MAGNETOM Vida MRI caused localised skin burn at electrode lead in patient with undeclared DBS system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC-020 - MAGNETOM Vida MRI SAR burn"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#IVDRRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk class under IVDR (EU 2017/746): Class A, B, C, D."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IVDR Risk Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ImplantableActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An active implantable device providing therapeutic function (e.g., LVAD, CRT-D)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Implantable Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#ActiveImplant"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#ImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device intended to be totally or partially introduced into the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Implantable Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#InSituCorrection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A correction applied to a device while it remains in the field (e.g., software update, enhanced monitoring)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "In Situ Correction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#InVitroDiagnosticDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device intended to be used for examination of specimens derived from the human body."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "In Vitro Diagnostic Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A reportable event involving a medical device that has or could have led to harm."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#MedicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#InfectionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of device-related infection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Infection Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#InjuryRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of direct physical harm to the patient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Injury Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#InterferenceRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk from electromagnetic or imaging interference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interference Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "IE/2017/001234"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@medtronic.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Ireland"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-IE-MED-0001"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-001"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Medtronic plc"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Irish medical device manufacturer, one of the world's largest."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medtronic plc"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "DE/2017/005678"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@abbott.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-DE-MED-0002"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-002"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Abbott Medical Devices"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "German-registered subsidiary of Abbott providing cardiac and diagnostic devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abbott Medical Devices"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "DE/2017/009012"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@siemens-healthineers.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-DE-MED-0003"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-003"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Siemens Healthineers AG"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "German manufacturer of imaging and diagnostic equipment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Siemens Healthineers AG"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "NL/2017/003456"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@philips.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Netherlands"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-NL-MED-0004"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-004"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Philips Medical Systems"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Dutch manufacturer of diagnostic imaging and patient monitoring systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Philips Medical Systems"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "DE/2017/007890"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@roche.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-DE-MED-0005"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-005"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Roche Diagnostics GmbH"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "German manufacturer of in vitro diagnostic devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Roche Diagnostics GmbH"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "IE/2017/002345"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@bsci.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Ireland"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-IE-MED-0006"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-006"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Boston Scientific Corporation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Irish-registered manufacturer of cardiovascular and endoscopy devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boston Scientific Corporation"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "NL/2017/006789"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@stryker.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Netherlands"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-NL-MED-0007"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-007"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Stryker Corporation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Dutch-registered manufacturer of orthopaedic implants and surgical equipment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Stryker Corporation"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "DE/2017/004567"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@biotronik.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-DE-MED-0008"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-008"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Biotronik SE & Co. KG"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "German manufacturer of cardiac rhythm management and endovascular devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Biotronik SE & Co. KG"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "SE/2017/008901"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@gehealthcare.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Sweden"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-SE-MED-0009"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-009"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "GE HealthCare Technologies"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Swedish-registered manufacturer of imaging, monitoring and diagnostics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GE HealthCare Technologies"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "CH/2017/001122"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@zimmerbiomet.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Switzerland"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-CH-MED-0010"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-010"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Zimmer Biomet Holdings"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Swiss manufacturer of orthopaedic reconstructive implants."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Zimmer Biomet Holdings"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "UK/2017/003344"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@livanova.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "United Kingdom"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-UK-MED-0011"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-011"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "LivaNova PLC"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "UK manufacturer of cardiac surgery and neuromodulation devices."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LivaNova PLC"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "DE/2017/005566"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@draeger.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-DE-MED-0012"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-012"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Draegerwerk AG & Co. KGaA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "German manufacturer of ventilators and anaesthesia workstations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Draegerwerk AG & Co. KGaA"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "FR/2017/007788"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@nipro.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-FR-MED-0013"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-013"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Nipro Corporation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "French-registered manufacturer of haemodialysis and infusion therapy products."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Nipro Corporation"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "BE/2017/009900"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@hologic.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "Belgium"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-BE-MED-0014"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-014"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "Hologic Inc."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Belgian-registered manufacturer of women's health diagnostics and surgical products."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hologic Inc."
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MAN-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasAuthorizationNumber" : [ {
+    "@value" : "FR/2017/002211"
+  } ],
+  "http://www.example.org/meddevice#hasContactEmail" : [ {
+    "@value" : "regulatory@biomerieux.com"
+  } ],
+  "http://www.example.org/meddevice#hasCountry" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.example.org/meddevice#hasEUDAMED_SRN" : [ {
+    "@value" : "SRN-FR-MED-0015"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerId" : [ {
+    "@value" : "MAN-015"
+  } ],
+  "http://www.example.org/meddevice#hasManufacturerName" : [ {
+    "@value" : "bioMerieux SA"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "French manufacturer of in vitro diagnostic systems for infectious disease."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "bioMerieux SA"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MDRRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk class under MDR (EU 2017/745): Class I, IIa, IIb, III."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MDR Risk Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MalfunctionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk arising from device failure or malfunction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Malfunction Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A legal or natural person responsible for the design, manufacture and marketing of a medical device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#MedicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MaterialRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk from degradation of device materials (wear, corrosion)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Material Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#MedicalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Top-level class for all entities in the medical device domain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Entity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#NearMissIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An event that could have resulted in patient harm but was prevented."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Near Miss Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0101"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-001"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Complete loss of electrical function leading to device shutdown."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device failure - electrical"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0102"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-002"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Structural failure of mechanical components under physiological load."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device failure - mechanical"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0201"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-003"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InjuryRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Thrombus formation on device surface causing embolic events."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Thrombosis - device-related"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0202"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-004"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InjuryRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Mechanical destruction of red blood cells by pump mechanism."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Hemolysis - pump-induced"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0301"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-005"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unintended displacement of implant from intended anatomical position."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device migration - implant"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0302"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-006"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cardiac lead displacement requiring repositioning or replacement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lead dislodgement"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-007",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0401"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-007"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InfectionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device-related infection at implantation site or systemic sepsis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Infection - device-related"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0402"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "High"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-008"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Moderate"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InfectionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Bacterial biofilm accumulation on implant surface resistant to antibiotics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Biofilm formation"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0501"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-009"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Battery end-of-life earlier than specified, risking therapy interruption."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Battery depletion - premature"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0502"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-010"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#SoftwareRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Software bug causing incorrect dosing, alarming, or therapy delivery."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Software malfunction"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-011",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0601"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-011"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#RadiationRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unintended ionising radiation exposure exceeding therapeutic dose."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Radiation overdose"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-012",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0701"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "High"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-012"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Moderate"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InterferenceRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Metallic implant causing MRI image artifacts compromising diagnostics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metallic artifact - MRI"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "A0702"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-013"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#InterferenceRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "External EMI affecting pacemaker/ICD sensing and pacing functions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Electromagnetic interference"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "B0101"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-014"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#DiagnosticRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "IVD test returns positive result in absence of target condition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "False positive result"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "B0102"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-015"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#DiagnosticRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "IVD test fails to detect target condition in affected individual."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "False negative result"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "B0201"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-016"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#DiagnosticRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reagent reacts with non-target analyte producing incorrect result."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cross-reactivity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "B0301"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-017"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#ContaminationRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reagent lot contamination leading to systematic diagnostic errors."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contamination - reagent"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-018",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "B0401"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-018"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Critical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#CybersecurityRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Exploitable software vulnerability enabling unauthorized device access."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cybersecurity vulnerability"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "C0101"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Medium"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-019"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MaterialRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Particulate debris from bearing surfaces causing adverse tissue reaction."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wear debris - joint implant"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RSK-020",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/meddevice#hasIMDRF_Code" : [ {
+    "@value" : "C0201"
+  } ],
+  "http://www.example.org/meddevice#hasProbability" : [ {
+    "@value" : "Low"
+  } ],
+  "http://www.example.org/meddevice#hasRiskId" : [ {
+    "@value" : "RSK-020"
+  } ],
+  "http://www.example.org/meddevice#hasSeverity" : [ {
+    "@value" : "Serious"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/meddevice#MaterialRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Metallic ion release from corrosion causing local or systemic toxicity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Corrosion - metallic implant"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RadiationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of unintended radiation exposure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Radiation Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An action to remove a device from the market or from use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recall"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A potential hazard or harm associated with the use of a medical device, classified according to IMDRF nomenclature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#MedicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#RiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Regulatory risk classification of a medical device according to MDR or IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#MedicalEntity"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#SafetyAlert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A communication issued to inform healthcare professionals of a safety issue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Safety Alert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#SelfTestDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An IVD device intended to be used by a lay person in a home environment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Self-Test Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#InVitroDiagnosticDevice"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An incident that has led to death, serious deterioration in health, or public health threat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Serious Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#SingleUseDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device intended to be used on a single individual during a single procedure."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Single Use Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#SoftwareRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk arising from software malfunction or bug."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Software Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#UserNotice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A formal notice issued to users with instructions to ensure continued safe use."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User Notice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasActionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date on which the corrective action was initiated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has action date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasAuthorizationNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Official authorization number issued by the competent authority."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has authorization number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasClassification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Assigns a regulatory risk class to a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/meddevice#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasClosureDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date on which the corrective action was closed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has closure date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasContactEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Regulatory contact email address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has contact email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasCountriesAffected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Countries affected by the corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has countries affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Country where the manufacturer is registered."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasCountryReported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Country where the incident was reported."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has country reported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasDeviceId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the device in the catalogue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has device ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasDeviceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Commercial name of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has device name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasDevicesAffected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Scope or number of devices affected by this corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has devices affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasEUDAMED_FSCARef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "EUDAMED reference number for the FSCA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has EUDAMED FSCA reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasEUDAMED_SRN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Single Registration Number (SRN) in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has EUDAMED SRN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "EUDAMED reference number for the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has EUDAMED incident reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasEventDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date on which the incident occurred."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has event date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasFSCA_ID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the Field Safety Corrective Action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has FSCA ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasIMDRF_Code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "IMDRF terminology code classifying the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has IMDRF code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasIncidentId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the incident report."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has incident ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasIntendedPurpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The intended purpose of the device as stated by the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has intended purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasManufacturerId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has manufacturer ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasManufacturerName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Legal name of the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has manufacturer name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Description of the clinical outcome of the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasPatientAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Age of the patient involved in the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has patient age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasPatientSex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sex of the patient involved in the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has patient sex"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasProbability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Probability of the risk occurring: Low, Medium, or High."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has probability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasRegulatoryFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Regulatory framework applicable to the device: MDR or IVDR."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has regulatory framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasReportDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date on which the incident was reported to the competent authority."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has report date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a device with an identified risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasRiskId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has risk ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasSeverity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Severity level of the risk: Critical, Serious, or Moderate."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has severity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Current status of the corrective action: Open or Closed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#hasUDI_DI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique Device Identifier – Device Identifier (UDI-DI) as registered in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has UDI-DI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#involvesRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates an incident with the risk category it materialised."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "involves risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/meddevice#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#isActive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "True if the device requires an external energy source."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is active"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#isAssociatedWithIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a device to a reported incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is associated with incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#isIVD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "True if the device is an in vitro diagnostic device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is IVD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#isImplantable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "True if the device is intended to be implanted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is implantable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#isManufacturedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device to its manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is manufactured by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.example.org/meddevice#manufactures"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#isReusable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "True if the device is intended for reuse after appropriate processing."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is reusable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#isSubclassifiedUnder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Transitive property expressing that a risk class or device type falls within a higher classification level. Because it is transitive, if A isSubclassifiedUnder B and B isSubclassifiedUnder C, then A isSubclassifiedUnder C."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is subclassified under"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#manufactures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a manufacturer to the devices it produces."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufactures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/meddevice#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/meddevice#triggeredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a corrective action to the incident that prompted it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/meddevice#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "triggered by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/meddevice#Incident"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+} ]

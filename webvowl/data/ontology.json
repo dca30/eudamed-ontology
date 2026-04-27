@@ -1,0 +1,2976 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.example.org/meddevice" ],
+    "title" : {
+      "undefined" : "EUDAMED Medical Device Ontology"
+    },
+    "iri" : "http://www.example.org/meddevice",
+    "version" : "1.0.0",
+    "author" : [ "Diego Calvo Alegre" ],
+    "description" : {
+      "undefined" : "OWL-DL ontology modelling the EUDAMED registry: medical devices, manufacturers, identified risks, reported incidents and field safety corrective actions (FSCAs)."
+    },
+    "labels" : {
+      "undefined" : "European Medical Device Catalogue Ontology"
+    },
+    "comments" : {
+      "undefined" : "Ontology for the European catalogue of high-risk medical devices and in vitro diagnostic devices, under MDR (EU 2017/745) and IVDR (EU 2017/746) regulatory frameworks."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Diego Calvo Alegre",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Diego Calvo Alegre",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2026-04-26",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2026-04-27",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Universitat Oberta de Catalunya",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "EUDAMED Medical Device Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.example.org/meddevice#InjuryRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "undefined" : "Injury Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-003",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Thrombus formation on device surface causing embolic events."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "undefined" : "Thrombosis - device-related"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-004",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Mechanical destruction of red blood cells by pump mechanism."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-004",
+        "undefined" : "Hemolysis - pump-induced"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk of direct physical harm to the patient."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#ImplantableDevice",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "undefined" : "Implantable Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#DEV-009",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Total knee arthroplasty implant system."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-009",
+        "undefined" : "Persona Knee System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-004",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Drug-eluting coronary stent system."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "undefined" : "SYNERGY Stent System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-025",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Transcatheter mitral valve replacement system."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-025",
+        "undefined" : "ValveXpert Transcatheter Mitral Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-003",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Transcatheter aortic valve replacement device."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "undefined" : "Portico Transcatheter Heart Valve"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-010",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Ceramic-on-ceramic total hip replacement."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-010",
+        "undefined" : "TRITON Total Hip System"
+      }
+    } ],
+    "subClasses" : [ "5" ],
+    "comment" : {
+      "undefined" : "A device intended to be totally or partially introduced into the human body."
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#Risk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "undefined" : "Risk"
+    },
+    "subClasses" : [ "9", "10", "0", "11", "12", "13", "14", "15", "16", "17" ],
+    "comment" : {
+      "undefined" : "A potential hazard or harm associated with the use of a medical device, classified according to IMDRF nomenclature."
+    },
+    "id" : "1",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#MedicalEntity",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MedicalEntity",
+      "undefined" : "Medical Entity"
+    },
+    "subClasses" : [ "24", "20", "25", "1", "4", "26" ],
+    "comment" : {
+      "undefined" : "Top-level class for all entities in the medical device domain."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#ContaminationRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "undefined" : "Contamination Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-017",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Reagent lot contamination leading to systematic diagnostic errors."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-017",
+        "undefined" : "Contamination - reagent"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk from contamination of reagents or device components."
+    },
+    "id" : "9",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#DiagnosticRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "undefined" : "Diagnostic Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-014",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "IVD test returns positive result in absence of target condition."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-014",
+        "undefined" : "False positive result"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-016",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Reagent reacts with non-target analyte producing incorrect result."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-016",
+        "undefined" : "Cross-reactivity"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-015",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "IVD test fails to detect target condition in affected individual."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-015",
+        "undefined" : "False negative result"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk of incorrect diagnostic result from an IVD device."
+    },
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#SelfTestDevice",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "undefined" : "Self-Test Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#DEV-021",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Continuous glucose monitor for patients with diabetes."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-021",
+        "undefined" : "OPTIGA Glucose Monitoring System"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An IVD device intended to be used by a lay person in a home environment."
+    },
+    "id" : "36",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#NearMissIncident",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "undefined" : "Near Miss Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#INC-019",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Tivoli II cochlear implant failed to respond to initial activation. Sound processor replacement resolved."
+      },
+      "labels" : {
+        "IRI-based" : "INC-019",
+        "undefined" : "INC-019 - Tivoli II cochlear implant activation failure"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An event that could have resulted in patient harm but was prevented."
+    },
+    "id" : "40",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#SafetyAlert",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "undefined" : "Safety Alert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#FSCA-004",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Safety communication regarding optimal fixation technique for ACUITY X4 lead."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-004",
+        "undefined" : "FSCA-004 - ACUITY X4 lead fixation alert"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-013",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Safety communication regarding outflow graft kinking risk in HeartMate 3 LVAD."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-013",
+        "undefined" : "FSCA-013 - HeartMate 3 graft kinking alert"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-001",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Safety alert regarding anticoagulation protocol update for HeartMate 3 to reduce thrombosis risk."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "undefined" : "FSCA-001 - HeartMate 3 anticoagulation alert"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A communication issued to inform healthcare professionals of a safety issue."
+    },
+    "id" : "50",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#Device",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "subClasses" : [ "3", "37", "61", "62" ],
+    "comment" : {
+      "undefined" : "A medical device or in vitro diagnostic device registered in EUDAMED."
+    },
+    "id" : "4",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#CorrectiveAction",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "undefined" : "Corrective Action"
+    },
+    "subClasses" : [ "63", "64", "65", "50" ],
+    "comment" : {
+      "undefined" : "A Field Safety Corrective Action (FSCA) taken by a manufacturer to reduce the risk associated with a device."
+    },
+    "id" : "26",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#Manufacturer",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "undefined" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#MAN-010",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Swiss manufacturer of orthopaedic reconstructive implants."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-010",
+        "undefined" : "Zimmer Biomet Holdings"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-012",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "German manufacturer of ventilators and anaesthesia workstations."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-012",
+        "undefined" : "Draegerwerk AG & Co. KGaA"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-001",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Irish medical device manufacturer, one of the world's largest."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "undefined" : "Medtronic plc"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-011",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "UK manufacturer of cardiac surgery and neuromodulation devices."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-011",
+        "undefined" : "LivaNova PLC"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-014",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Belgian-registered manufacturer of women's health diagnostics and surgical products."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-014",
+        "undefined" : "Hologic Inc."
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-003",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "German manufacturer of imaging and diagnostic equipment."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-003",
+        "undefined" : "Siemens Healthineers AG"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-013",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "French-registered manufacturer of haemodialysis and infusion therapy products."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-013",
+        "undefined" : "Nipro Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-002",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "German-registered subsidiary of Abbott providing cardiac and diagnostic devices."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-002",
+        "undefined" : "Abbott Medical Devices"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-005",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "German manufacturer of in vitro diagnostic devices."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-005",
+        "undefined" : "Roche Diagnostics GmbH"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-015",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "French manufacturer of in vitro diagnostic systems for infectious disease."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-015",
+        "undefined" : "bioMerieux SA"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-004",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Dutch manufacturer of diagnostic imaging and patient monitoring systems."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-004",
+        "undefined" : "Philips Medical Systems"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-007",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Dutch-registered manufacturer of orthopaedic implants and surgical equipment."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-007",
+        "undefined" : "Stryker Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-006",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Irish-registered manufacturer of cardiovascular and endoscopy devices."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-006",
+        "undefined" : "Boston Scientific Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-009",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Swedish-registered manufacturer of imaging, monitoring and diagnostics."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-009",
+        "undefined" : "GE HealthCare Technologies"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#MAN-008",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "German manufacturer of cardiac rhythm management and endovascular devices."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-008",
+        "undefined" : "Biotronik SE & Co. KG"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A legal or natural person responsible for the design, manufacture and marketing of a medical device."
+    },
+    "id" : "25",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#UserNotice",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UserNotice",
+      "undefined" : "User Notice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#FSCA-014",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Updated IFU regarding post-operative infection prophylaxis. Extended antibiotic course mandatory."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-014",
+        "undefined" : "FSCA-014 - Iluvien infection prophylaxis notice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-007",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Urgent safety notice regarding MRI scanning protocol for Viva CRT-D. Mandatory reprogramming required."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-007",
+        "undefined" : "FSCA-007 - Viva CRT-D MRI protocol notice"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-009",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Customer field notification regarding biotin interference in TSH assay."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-009",
+        "undefined" : "FSCA-009 - cobas e 801 biotin interference notice"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A formal notice issued to users with instructions to ensure continued safe use."
+    },
+    "id" : "65",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#RadiationRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiationRisk",
+      "undefined" : "Radiation Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-011",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Unintended ionising radiation exposure exceeding therapeutic dose."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-011",
+        "undefined" : "Radiation overdose"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk of unintended radiation exposure."
+    },
+    "id" : "17",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#CybersecurityRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "undefined" : "Cybersecurity Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-018",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Exploitable software vulnerability enabling unauthorized device access."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-018",
+        "undefined" : "Cybersecurity vulnerability"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk from cybersecurity vulnerabilities in connected medical devices."
+    },
+    "id" : "10",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#MaterialRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "undefined" : "Material Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-019",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Particulate debris from bearing surfaces causing adverse tissue reaction."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-019",
+        "undefined" : "Wear debris - joint implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-020",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Metallic ion release from corrosion causing local or systemic toxicity."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-020",
+        "undefined" : "Corrosion - metallic implant"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk from degradation of device materials (wear, corrosion)."
+    },
+    "id" : "15",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#SoftwareRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "undefined" : "Software Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-010",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Software bug causing incorrect dosing, alarming, or therapy delivery."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-010",
+        "undefined" : "Software malfunction"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk arising from software malfunction or bug."
+    },
+    "id" : "16",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#MDRRiskClass",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MDRRiskClass",
+      "undefined" : "MDR Risk Class"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#ClassI",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Lowest risk class under MDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassI",
+        "undefined" : "Class I"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#ClassIIa",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Medium-low risk class under MDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIa",
+        "undefined" : "Class IIa"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#ClassIIb",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Medium-high risk class under MDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIIb",
+        "undefined" : "Class IIb"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#ClassIII",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Highest risk class under MDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII",
+        "undefined" : "Class III"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk class under MDR (EU 2017/745): Class I, IIa, IIb, III."
+    },
+    "id" : "82",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#InfectionRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "undefined" : "Infection Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-007",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Device-related infection at implantation site or systemic sepsis."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-007",
+        "undefined" : "Infection - device-related"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-008",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Bacterial biofilm accumulation on implant surface resistant to antibiotics."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-008",
+        "undefined" : "Biofilm formation"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk of device-related infection."
+    },
+    "id" : "13",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#ImplantableActiveDevice",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "undefined" : "Implantable Active Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#DEV-001",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Left ventricular assist device for end-stage heart failure patients."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "undefined" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An active implantable device providing therapeutic function (e.g., LVAD, CRT-D)."
+    },
+    "id" : "88",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#ActiveDevice",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "undefined" : "Active Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#DEV-008",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Magnetic resonance imaging system 3T."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-008",
+        "undefined" : "MAGNETOM Vida MRI System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-007",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Diagnostic ultrasound imaging system."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-007",
+        "undefined" : "ACUSON Sequoia Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-015",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "High-volume online hemodiafiltration machine."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-015",
+        "undefined" : "Hemodialysis Machine 5008S"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-014",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Handheld point-of-care ultrasound probe."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-014",
+        "undefined" : "Lumify Portable Ultrasound"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-022",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Portable patient monitor for vital signs."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-022",
+        "undefined" : "BeneVision N1 Patient Monitor"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-013",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "ICU mechanical ventilator with pressure and volume modes."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-013",
+        "undefined" : "ATERA Mechanical Ventilator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-024",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Large volume infusion pump with drug library."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-024",
+        "undefined" : "Infusion Pump Plum 360"
+      }
+    } ],
+    "subClasses" : [ "5" ],
+    "comment" : {
+      "undefined" : "A device whose operation depends on a source of energy other than the human body."
+    },
+    "id" : "62",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "85",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#SingleUseDevice",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "undefined" : "Single Use Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#DEV-006",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Peripheral artery drug-coated angioplasty balloon."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-006",
+        "undefined" : "STELLAREX Drug-Coated Balloon"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A device intended to be used on a single individual during a single procedure."
+    },
+    "id" : "61",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#IVDRRiskClass",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDRRiskClass",
+      "undefined" : "IVDR Risk Class"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#ClassA",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Lowest risk class under IVDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassA",
+        "undefined" : "Class A"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#ClassB",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Low-medium risk class under IVDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassB",
+        "undefined" : "Class B"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#ClassC",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Medium-high risk class under IVDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassC",
+        "undefined" : "Class C"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#ClassD",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Highest risk class under IVDR."
+      },
+      "labels" : {
+        "IRI-based" : "ClassD",
+        "undefined" : "Class D"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk class under IVDR (EU 2017/746): Class A, B, C, D."
+    },
+    "id" : "110",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#InterferenceRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "undefined" : "Interference Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-013",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "External EMI affecting pacemaker/ICD sensing and pacing functions."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-013",
+        "undefined" : "Electromagnetic interference"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-012",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Metallic implant causing MRI image artifacts compromising diagnostics."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-012",
+        "undefined" : "Metallic artifact - MRI"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk from electromagnetic or imaging interference."
+    },
+    "id" : "12",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#MalfunctionRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "undefined" : "Malfunction Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#RSK-006",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Cardiac lead displacement requiring repositioning or replacement."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-006",
+        "undefined" : "Lead dislodgement"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-009",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Battery end-of-life earlier than specified, risking therapy interruption."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-009",
+        "undefined" : "Battery depletion - premature"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-002",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Structural failure of mechanical components under physiological load."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-002",
+        "undefined" : "Device failure - mechanical"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-005",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Unintended displacement of implant from intended anatomical position."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-005",
+        "undefined" : "Device migration - implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#RSK-001",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Complete loss of electrical function leading to device shutdown."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-001",
+        "undefined" : "Device failure - electrical"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk arising from device failure or malfunction."
+    },
+    "id" : "14",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#InVitroDiagnosticDevice",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "undefined" : "In Vitro Diagnostic Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#DEV-020",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Non-invasive prenatal testing (NIPT) for aneuploidies."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-020",
+        "undefined" : "Harmony Prenatal Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-019",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Urine-based prostate cancer diagnosis assay."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-019",
+        "undefined" : "PROGENSA PCA3 Assay"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-018",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Combined HIV Ag/Ab detection assay."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-018",
+        "undefined" : "VIDAS HIV DUO Ultra"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-017",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Molecular diagnostic test for SARS-CoV-2 detection."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-017",
+        "undefined" : "cobas SARS-CoV-2 RT-PCR Test"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-016",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Automated immunoassay analyzer for clinical laboratory use."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-016",
+        "undefined" : "cobas e 801 Immunoassay Analyzer"
+      }
+    } ],
+    "subClasses" : [ "36" ],
+    "comment" : {
+      "undefined" : "A device intended to be used for examination of specimens derived from the human body."
+    },
+    "id" : "37",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#RiskClass",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "undefined" : "Risk Class"
+    },
+    "subClasses" : [ "82", "110" ],
+    "comment" : {
+      "undefined" : "Regulatory risk classification of a medical device according to MDR or IVDR."
+    },
+    "id" : "24",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#ActiveImplant",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "undefined" : "Active Implant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#DEV-005",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Cardiac resynchronization therapy lead."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "undefined" : "ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-011",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Sustained-release fluocinolone acetonide ocular implant."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-011",
+        "undefined" : "Iluvien Intravitreal Implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-002",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Leadless cardiac pacemaker for atrioventricular synchrony."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "undefined" : "Micra AV Transcatheter Pacing System"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-012",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Cardiac resynchronization therapy with defibrillation."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-012",
+        "undefined" : "Viva Cardiac Resynchronization Defibrillator"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#DEV-023",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Active cochlear implant for sensorineural hearing loss."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-023",
+        "undefined" : "Tivoli II Cochlear Implant"
+      }
+    } ],
+    "subClasses" : [ "88" ],
+    "comment" : {
+      "undefined" : "An active device that is intended to be totally or partially introduced into the human body."
+    },
+    "id" : "5",
+    "superClasses" : [ "3", "62" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/meddevice#SeriousIncident",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "undefined" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#INC-002",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected."
+      },
+      "labels" : {
+        "IRI-based" : "INC-002",
+        "undefined" : "INC-002 - Micra AV battery depletion"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-013",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "VIDAS HIV DUO Ultra failed to detect HIV-1 group O in seroconversion panel."
+      },
+      "labels" : {
+        "IRI-based" : "INC-013",
+        "undefined" : "INC-013 - VIDAS HIV false negative"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-003",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Portico valve paravalvular leak grade III due to partial migration 2 weeks post-TAVI."
+      },
+      "labels" : {
+        "IRI-based" : "INC-003",
+        "undefined" : "INC-003 - Portico valve migration"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-014",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "OPTIGA CGM reported glucose 3.8 mmol/L while laboratory showed 14.2 mmol/L. Patient delayed insulin."
+      },
+      "labels" : {
+        "IRI-based" : "INC-014",
+        "undefined" : "INC-014 - OPTIGA CGM false reading"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-004",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "SYNERGY stent fracture detected on angiography 18 months post-implant causing restenosis."
+      },
+      "labels" : {
+        "IRI-based" : "INC-004",
+        "undefined" : "INC-004 - SYNERGY stent fracture"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-015",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Plum 360 pump delivered 10x heparin dose due to software decimal point error in drug library v4.2.1."
+      },
+      "labels" : {
+        "IRI-based" : "INC-015",
+        "undefined" : "INC-015 - Plum 360 heparin overdose"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-016",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "HeartMate 3 patient developed severe haemolysis associated with outflow graft kinking."
+      },
+      "labels" : {
+        "IRI-based" : "INC-016",
+        "undefined" : "INC-016 - HeartMate 3 haemolysis"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-005",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "ACUITY X4 lead dislodgement to right ventricle requiring fluoroscopy-guided repositioning."
+      },
+      "labels" : {
+        "IRI-based" : "INC-005",
+        "undefined" : "INC-005 - ACUITY X4 lead dislodgement"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-020",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "MAGNETOM Vida MRI caused localised skin burn at electrode lead in patient with undeclared DBS system."
+      },
+      "labels" : {
+        "IRI-based" : "INC-020",
+        "undefined" : "INC-020 - MAGNETOM Vida MRI SAR burn"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-010",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "ATERA ventilator software v2.1.3 delivered FiO2 6% lower than set value. 3 patients affected."
+      },
+      "labels" : {
+        "IRI-based" : "INC-010",
+        "undefined" : "INC-010 - ATERA ventilator FiO2 error"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-011",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "cobas e 801 TSH assay reported false positive results in 12 euthyroid patients due to biotin interference."
+      },
+      "labels" : {
+        "IRI-based" : "INC-011",
+        "undefined" : "INC-011 - cobas e 801 false positive TSH"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-001",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "undefined" : "INC-001 - HeartMate 3 thrombosis"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-012",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "cobas SARS-CoV-2 assay failed to detect Omicron BA.2.86 in 7 samples. Lot-specific issue."
+      },
+      "labels" : {
+        "IRI-based" : "INC-012",
+        "undefined" : "INC-012 - cobas SARS-CoV-2 false negative"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-006",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "ACUSON Sequoia ultrasound system froze mid-examination."
+      },
+      "labels" : {
+        "IRI-based" : "INC-006",
+        "undefined" : "INC-006 - ACUSON system failure"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-017",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Iluvien implant required surgical removal due to device-related endophthalmitis."
+      },
+      "labels" : {
+        "IRI-based" : "INC-017",
+        "undefined" : "INC-017 - Iluvien endophthalmitis"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-007",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Persona knee tibial insert showing accelerated polyethylene wear with metallosis at 3-year revision."
+      },
+      "labels" : {
+        "IRI-based" : "INC-007",
+        "undefined" : "INC-007 - Persona knee wear debris"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-018",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "5008S hemodialysis web interface exposed to hospital network. Unauthorised access to alarm configuration."
+      },
+      "labels" : {
+        "IRI-based" : "INC-018",
+        "undefined" : "INC-018 - 5008S cybersecurity breach"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-008",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "TRITON hip patient presented with elevated serum cobalt. ALTR confirmed by MRI."
+      },
+      "labels" : {
+        "IRI-based" : "INC-008",
+        "undefined" : "INC-008 - TRITON hip cobalt toxicity"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#INC-009",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Viva CRT-D delivered inappropriate ICD therapy during MRI scan despite MRI-conditional programming."
+      },
+      "labels" : {
+        "IRI-based" : "INC-009",
+        "undefined" : "INC-009 - Viva CRT-D inappropriate shock"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An incident that has led to death, serious deterioration in health, or public health threat."
+    },
+    "id" : "106",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#InSituCorrection",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "undefined" : "In Situ Correction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#FSCA-015",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Security patch 3.0.1 disabling unrestricted web interface. Network segmentation guidance issued."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-015",
+        "undefined" : "FSCA-015 - 5008S security patch"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-003",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Enhanced deployment training and updated IFU for Portico valve implantation technique."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-003",
+        "undefined" : "FSCA-003 - Portico valve deployment training"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-005",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Enhanced surveillance programme with annual DEXA scan for patients with affected tibial inserts."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-005",
+        "undefined" : "FSCA-005 - Persona knee enhanced surveillance"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-011",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Enhanced calibration protocol and firmware update for OPTIGA CGM sensors."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-011",
+        "undefined" : "FSCA-011 - OPTIGA CGM firmware update"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A correction applied to a device while it remains in the field (e.g., software update, enhanced monitoring)."
+    },
+    "id" : "63",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#Recall",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recall",
+      "undefined" : "Recall"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/meddevice#FSCA-002",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Voluntary recall of affected Micra AV lots due to premature battery depletion."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-002",
+        "undefined" : "FSCA-002 - Micra AV recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-012",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Urgent recall and remote software update. Drug library v4.3.0 corrects decimal point error."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-012",
+        "undefined" : "FSCA-012 - Plum 360 drug library recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-008",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Software recall: mandatory update to version 2.2.0 resolving FiO2 calibration error."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-008",
+        "undefined" : "FSCA-008 - ATERA ventilator software recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-006",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Urgent safety recall due to elevated metal ion levels. Revision surgery recommended."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-006",
+        "undefined" : "FSCA-006 - TRITON hip urgent recall"
+      }
+    }, {
+      "iri" : "http://www.example.org/meddevice#FSCA-010",
+      "baseIri" : "http://www.example.org/meddevice",
+      "comment" : {
+        "undefined" : "Immediate quarantine and replacement of affected reagent lots. New primer design covering BA.2.86."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-010",
+        "undefined" : "FSCA-010 - cobas SARS-CoV-2 reagent lot recall"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "An action to remove a device from the market or from use."
+    },
+    "id" : "64",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.example.org/meddevice#Incident",
+    "baseIri" : "http://www.example.org/meddevice",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "undefined" : "Incident"
+    },
+    "subClasses" : [ "40", "106" ],
+    "comment" : {
+      "undefined" : "A reportable event involving a medical device that has or could have led to harm."
+    },
+    "id" : "20",
+    "superClasses" : [ "8" ]
+  } ],
+  "property" : [ {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.example.org/meddevice#hasUDI_DI",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasUDI_DI",
+      "undefined" : "has UDI-DI"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Unique Device Identifier – Device Identifier (UDI-DI) as registered in EUDAMED."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasEventDate",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasEventDate",
+      "undefined" : "has event date"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Date on which the incident occurred."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.example.org/meddevice#isManufacturedBy",
+    "inverse" : "29",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "isManufacturedBy",
+      "undefined" : "is manufactured by"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Relates a device to its manufacturer."
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.example.org/meddevice#isAssociatedWithIncident",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "isAssociatedWithIncident",
+      "undefined" : "is associated with incident"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Links a device to a reported incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasCountriesAffected",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "hasCountriesAffected",
+      "undefined" : "has countries affected"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Countries affected by the corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasClosureDate",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasClosureDate",
+      "undefined" : "has closure date"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Date on which the corrective action was closed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasActionDate",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasActionDate",
+      "undefined" : "has action date"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Date on which the corrective action was initiated."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasPatientAge",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "hasPatientAge",
+      "undefined" : "has patient age"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Age of the patient involved in the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.example.org/meddevice#triggeredBy",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "triggeredBy",
+      "undefined" : "triggered by"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Links a corrective action to the incident that prompted it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "56"
+  }, {
+    "range" : "8",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "8",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasPatientSex",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasPatientSex",
+      "undefined" : "has patient sex"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Sex of the patient involved in the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasProbability",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasProbability",
+      "undefined" : "has probability"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Probability of the risk occurring: Low, Medium, or High."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasOutcome",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasOutcome",
+      "undefined" : "has outcome"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Description of the clinical outcome of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "range" : "8",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "8",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "8",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "1",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "1",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.example.org/meddevice#isImplantable",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "undefined" : "is implantable"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "True if the device is intended to be implanted."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "range" : "1",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "1",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasIncidentId",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasIncidentId",
+      "undefined" : "has incident ID"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Unique identifier of the incident report."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "range" : "1",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasFSCA_ID",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasFSCA_ID",
+      "undefined" : "has FSCA ID"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Unique identifier of the Field Safety Corrective Action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasReportDate",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasReportDate",
+      "undefined" : "has report date"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Date on which the incident was reported to the competent authority."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.example.org/meddevice#isSubclassifiedUnder",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "isSubclassifiedUnder",
+      "undefined" : "is subclassified under"
+    },
+    "domain" : "85",
+    "comment" : {
+      "undefined" : "Transitive property expressing that a risk class or device type falls within a higher classification level. Because it is transitive, if A isSubclassifiedUnder B and B isSubclassifiedUnder C, then A isSubclassifiedUnder C."
+    },
+    "attributes" : [ "object", "transitive" ],
+    "id" : "84"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.example.org/meddevice#manufactures",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "manufactures",
+      "undefined" : "manufactures"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Relates a manufacturer to the devices it produces."
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasEUDAMED_FSCARef",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasEUDAMED_FSCARef",
+      "undefined" : "has EUDAMED FSCA reference"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "EUDAMED reference number for the FSCA."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasDeviceId",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasDeviceId",
+      "undefined" : "has device ID"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Unique identifier of the device in the catalogue."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasCountry",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasCountry",
+      "undefined" : "has country"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Country where the manufacturer is registered."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasDevicesAffected",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "hasDevicesAffected",
+      "undefined" : "has devices affected"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Scope or number of devices affected by this corrective action."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.example.org/meddevice#isIVD",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "isIVD",
+      "undefined" : "is IVD"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "True if the device is an in vitro diagnostic device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "range" : "20",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "5",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasEUDAMEM_IncidentRef",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "hasEUDAMEM_IncidentRef",
+      "undefined" : "has EUDAMED incident reference"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "EUDAMED reference number for the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "range" : "20",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "62",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "24",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "24",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasManufacturerId",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasManufacturerId",
+      "undefined" : "has manufacturer ID"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Unique identifier of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasCountryReported",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "hasCountryReported",
+      "undefined" : "has country reported"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Country where the incident was reported."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasContactEmail",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "hasContactEmail",
+      "undefined" : "has contact email"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Regulatory contact email address."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasSeverity",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasSeverity",
+      "undefined" : "has severity"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Severity level of the risk: Critical, Serious, or Moderate."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "range" : "26",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "26",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.example.org/meddevice#isActive",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "isActive",
+      "undefined" : "is active"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "True if the device requires an external energy source."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "range" : "26",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.example.org/meddevice#isReusable",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "isReusable",
+      "undefined" : "is reusable"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "True if the device is intended for reuse after appropriate processing."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "range" : "4",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "4",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "26",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "4",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasRegulatoryFramework",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasRegulatoryFramework",
+      "undefined" : "has regulatory framework"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Regulatory framework applicable to the device: MDR or IVDR."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasManufacturerName",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasManufacturerName",
+      "undefined" : "has manufacturer name"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Legal name of the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.example.org/meddevice#involvesRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "involvesRisk",
+      "undefined" : "involves risk"
+    },
+    "domain" : "20",
+    "comment" : {
+      "undefined" : "Associates an incident with the risk category it materialised."
+    },
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasDeviceName",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "hasDeviceName",
+      "undefined" : "has device name"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Commercial name of the device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasRisk",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasRisk",
+      "undefined" : "has risk"
+    },
+    "minCardinality" : "1",
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Associates a device with an identified risk."
+    },
+    "attributes" : [ "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasIntendedPurpose",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "hasIntendedPurpose",
+      "undefined" : "has intended purpose"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "The intended purpose of the device as stated by the manufacturer."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasEUDAMED_SRN",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasEUDAMED_SRN",
+      "undefined" : "has EUDAMED SRN"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Single Registration Number (SRN) in EUDAMED."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasClassification",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasClassification",
+      "undefined" : "has classification"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Assigns a regulatory risk class to a device."
+    },
+    "attributes" : [ "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasIMDRF_Code",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasIMDRF_Code",
+      "undefined" : "has IMDRF code"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "IMDRF terminology code classifying the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasRiskId",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasRiskId",
+      "undefined" : "has risk ID"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Unique identifier of the risk."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasStatus",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasStatus",
+      "undefined" : "has status"
+    },
+    "domain" : "26",
+    "comment" : {
+      "undefined" : "Current status of the corrective action: Open or Closed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.example.org/meddevice#hasAuthorizationNumber",
+    "baseIri" : "http://www.example.org/meddevice",
+    "range" : "132",
+    "label" : {
+      "IRI-based" : "hasAuthorizationNumber",
+      "undefined" : "has authorization number"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "Official authorization number issued by the competent authority."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "140"
+  } ]
+}
